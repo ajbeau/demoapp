@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :tweets
+
   get 'static_pages/home'
 
   match 'help', to: 'static_pages#help', via: 'get'
